@@ -1,0 +1,145 @@
+﻿@model CalorieDiary.Application.ViewModels.Start.IndexVm
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Managment Center</h1>
+
+
+    @*<h4>IndexVm</h4>*@
+    <hr />
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <button type="button" class="btn btn-primary" value="Create" onclick="location.href='@Url.Action("AddProduct", "Product")'">Add Product</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <button type="button" class="btn btn-success" value="Create" onclick="location.href='@Url.Action("Index", "Product")'">Add eated product</button>
+  </div>
+ </div>
+  <div class="row">
+      <div class="col">
+        <button type="button" class="btn btn-warning" value="Create" onclick="location.href='@Url.Action("ShowEatedProductByDate", "Start")'">Show eated product</button>
+      </div>
+  </div>
+    <div class="row">
+      <div class="col">
+        <button type="button" class="btn btn-info" value="Create" onclick="location.href='@Url.Action("Calculator", "Calculator")'">Calculate</button>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col">
+      <p style="font-size:35px;">Calories and macronutrients consumed:</p>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col">
+          Kcal(@Model.EatedKcal)
+        <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: @Model.PercentEatedKcal" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+  </div>
+    <div class="row">
+      <div class="col">
+          Protein(@Model.EatedProtein g)
+        <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: @Model.PercentEatedProtein" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+  </div>
+    <div class="row">
+      <div class="col">
+         Carbo(@Model.EatedCarbo g)
+        <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: @Model.PercentEatedCarbo" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+  </div>
+    <div class="row">
+      <div class="col">
+          Fat(@Model.EatedFat g)
+        <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: @Model.PercentEatedFat" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+    @*<dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EatedProtein)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EatedProtein)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EatedCarbo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EatedCarbo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EatedFat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EatedFat)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EatedKcal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EatedKcal)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DayDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DayDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PercentEatedKcal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PercentEatedKcal)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PercentEatedCarbo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PercentEatedCarbo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PercentEatedFat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PercentEatedFat)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PercentEatedProtein)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PercentEatedProtein)
+        </dd>
+    </dl>*@
+@*<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>*@

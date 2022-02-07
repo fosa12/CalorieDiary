@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalorieDiary.Web", "CalorieDiary.Web\CalorieDiary.Web.csproj", "{2ED49631-AB12-4C8F-93D0-8AF93B29E2A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{2CDCA971-7974-4A06-853C-B782B1043A79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{4439B3C9-3CE7-4876-83B1-13D50B621285}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{3E3D0BF3-52F7-43A4-A4A7-31FF0FF23AEA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{B70003DF-BED4-4689-B298-FCF277B5A7DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalorieDiary.Application", "CalorieDiary.Application\CalorieDiary.Application.csproj", "{288DC341-43D5-4285-9A8F-476770376F87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalorieDiary.Domain", "CalorieDiary.Domain\CalorieDiary.Domain.csproj", "{02642E5D-754A-4B71-A716-D148E70C7E03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalorieDiary.Infrastructure", "CalorieDiary.Infrastructure\CalorieDiary.Infrastructure.csproj", "{38DA03DF-3CFD-47E3-B0B7-0A5E91D50824}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2ED49631-AB12-4C8F-93D0-8AF93B29E2A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ED49631-AB12-4C8F-93D0-8AF93B29E2A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ED49631-AB12-4C8F-93D0-8AF93B29E2A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ED49631-AB12-4C8F-93D0-8AF93B29E2A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{288DC341-43D5-4285-9A8F-476770376F87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{288DC341-43D5-4285-9A8F-476770376F87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{288DC341-43D5-4285-9A8F-476770376F87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{288DC341-43D5-4285-9A8F-476770376F87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02642E5D-754A-4B71-A716-D148E70C7E03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02642E5D-754A-4B71-A716-D148E70C7E03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02642E5D-754A-4B71-A716-D148E70C7E03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02642E5D-754A-4B71-A716-D148E70C7E03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38DA03DF-3CFD-47E3-B0B7-0A5E91D50824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38DA03DF-3CFD-47E3-B0B7-0A5E91D50824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38DA03DF-3CFD-47E3-B0B7-0A5E91D50824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38DA03DF-3CFD-47E3-B0B7-0A5E91D50824}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2ED49631-AB12-4C8F-93D0-8AF93B29E2A1} = {2CDCA971-7974-4A06-853C-B782B1043A79}
+		{288DC341-43D5-4285-9A8F-476770376F87} = {4439B3C9-3CE7-4876-83B1-13D50B621285}
+		{02642E5D-754A-4B71-A716-D148E70C7E03} = {3E3D0BF3-52F7-43A4-A4A7-31FF0FF23AEA}
+		{38DA03DF-3CFD-47E3-B0B7-0A5E91D50824} = {B70003DF-BED4-4689-B298-FCF277B5A7DD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70C71916-46B9-4CC8-A3EE-E4CCA0CD0416}
+	EndGlobalSection
+EndGlobal

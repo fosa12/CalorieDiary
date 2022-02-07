@@ -1,0 +1,68 @@
+﻿@model CalorieDiary.Application.ViewModels.Start.ListEatedProductForListVm
+
+@{
+    ViewData["Title"] = "ShowEatedProductByDate";
+}
+
+<h1>Eated Product</h1>
+
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>*@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Product Name
+            </th>
+            <th>
+                Eated Grams
+            </th>
+            <th>
+                Kcal
+            </th>
+            <th>
+                Protein
+            </th>
+            <th>
+                Fat
+            </th>
+            <th>
+                Carbo
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Products) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gram)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kcal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Protein)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Carbo)
+            </td>
+
+            <td>
+                @Html.ActionLink("Remove Product", "DeleteEatedProduct","Start", new { id = item.EatedProductId }) |
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+ <button type="button" class="btn btn-primary" value="Create" onclick="location.href='@Url.Action("Index", "Start")'">Management center</button>
+  <button type="button" class="btn btn-primary" value="Create" onclick="location.href='@Url.Action("ShowEatedProductDate", "Start")'">Show other day</button>
+

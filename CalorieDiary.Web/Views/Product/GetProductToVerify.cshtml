@@ -1,0 +1,66 @@
+﻿@model CalorieDiary.Application.ViewModels.Product.ListProductForListVm
+
+@{
+    ViewData["Title"] = "GetProductToVerify";
+}
+
+<h1>Verify Product</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Product Name
+            </th>
+            <th>
+                Kcal
+            </th>
+            <th>
+                Protein
+            </th>
+            <th>
+                Fat
+            </th>
+            <th>
+                Carbo
+            </th>
+            <th>
+                Is Verified
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Products) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kcal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Protein)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Carbo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsVerified)
+            </td>
+
+            <td>
+                @Html.ActionLink("Verify product", "VerifyProduct","Product", new { item.Id }) |
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+ <button type="button" class="btn btn-primary" value="Create" onclick="location.href='@Url.Action("Index", "Start")'">Management center</button>
