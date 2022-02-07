@@ -28,7 +28,7 @@ namespace CalorieDiary.Infrastructure.Repositories
             return calculation;
         }
 
-        public CaloricDemand GetLastCalculation()
+        public CaloricDemand GetLastCalculation()//LAST CALCULATION BY ID
         {
             var lastCalculation = _context.CaloricDemands.OrderBy(x => x.Id).Last();
             return lastCalculation;
